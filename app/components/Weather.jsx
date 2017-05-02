@@ -8,13 +8,16 @@ var Weather = React.createClass({
   getInitialState: function(){
     return ({
       isLoading: false,
-      errorMessage: undefined
+
     });
   },
   handleSearch: function(location) {
     var that = this;
 
-    this.setState({isLoading: true});
+    this.setState({
+      isLoading: true,
+      errorMessage: undefined
+    });
     openWeatherMap.getTemp(location).then(function(temp){
       that.setState({
         location: location,
