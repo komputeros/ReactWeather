@@ -18,7 +18,7 @@ var {IndexLink, Link} = require('react-router');
 var About = (props) => {
   return (
     <div>
-        <h1 className="text-center">About</h1>
+        <h1 className="text-center page-title">About</h1>
           <div className="callout primary">
             <h5>This is About Example</h5>
             <p>Some links:</p>
